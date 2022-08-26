@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorsuperman
+package com.passpackfour.passgeneratorplants
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import com.passpackfour.passgeneratorsuperman.databinding.FragmentStartBinding
+import com.passpackfour.passgeneratorplants.databinding.FragmentStartBinding
 
 
 class StartFragment : Fragment() {

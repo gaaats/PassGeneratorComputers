@@ -1,10 +1,10 @@
-package com.passpackfour.passgeneratorsuperman
+package com.passpackfour.passgeneratorplants
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
-import com.passpackfour.passgeneratorsuperman.databinding.ActivityMainBinding
+import com.passpackfour.passgeneratorplants.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

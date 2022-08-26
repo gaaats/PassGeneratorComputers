@@ -81,6 +81,37 @@
         app:layout_constraintTop_toTopOf="@id/guideline_hor_05" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_vibration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="@string/vibration"
+        android:textColor="@color/add_colour_the_most_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_30" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_vibro"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_vibration"
+        android:progress="90"
+        android:thumb="@drawable/thumb_custom"
+        android:thumbTint="@color/add_colour_the_most_dark"
+        android:progressDrawable="@drawable/seek_bar_custom"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_title_music"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -116,8 +147,9 @@
         app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintTop_toTopOf="@id/guideline_hor_50"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_music"
         android:progress="30"
+        android:layout_marginTop="12dp"
         android:thumb="@drawable/thumb_custom"
         android:thumbTint="@color/add_colour_the_most_dark"
         android:progressDrawable="@drawable/seek_bar_custom"

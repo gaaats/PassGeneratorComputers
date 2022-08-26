@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorsuperman
+package com.passpackfour.passgeneratorplants
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -12,7 +12,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
-import com.passpackfour.passgeneratorsuperman.databinding.FragmentResultBinding
+import com.passpackfour.passgeneratorplants.databinding.FragmentResultBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -99,14 +99,65 @@ class ResultFragment : Fragment() {
     }
 
     private suspend fun generatePass() {
-        val res = serviceTMDB.getMoviByID()
-        val list = res.body()!!.keywords!!.shuffled()
-        list.forEach {
-            if (textPass.length <= 64) {
-                textPass = textPass + generateRandomNumber() + it?.name
-                Log.d("testtag", "key is $textPass")
+        val listPlants = listOf(
+            "a rose",
+            "a tulip",
+            "a carnation",
+            "a dandelion",
+            "a geranium",
+            "a rosebay",
+            "a lily",
+            "a crocus",
+            "an iris",
+            "a chrysanthemum",
+            "a freesia",
+            "a violet",
+            "a petunia",
+            "a sunflower",
+            "a cornflower",
+            "pansy",
+            "forget-me-nots",
+            "marigold",
+            "a daffodil",
+            "a daisy",
+            "an orchid",
+            "a poppy",
+            "a gladiolus",
+            "a dahlia",
+            "a peony",
+            "an aster",
+            "a gerbera",
+            "a fuchsia",
+            "bellflowers",
+            "a buttercup",
+            "lavender",
+            "a primula",
+            "a primrose",
+            "camellia",
+            "gardenia",
+            "a clover",
+            "lilac",
+            "snowdrops",
+            "lily-of-the-valley",
+            "a hyacinth",
+            "heather",
+            "a delphinium"
+        )
+
+        for (element in listPlants){
+            if (textPass.length <= 100) {
+                textPass = textPass + generateRandomNumber() + element
             }
         }
+
+//        val res = serviceTMDB.getMoviByID()
+//        val list = res.body()!!.keywords!!.shuffled()
+//        list.forEach {
+//            if (textPass.length <= 64) {
+//                textPass = textPass + generateRandomNumber() + it?.name
+//                Log.d("testtag", "key is $textPass")
+//            }
+//        }
         val result = textPass.replace(" ", "")
         binding.tvResultText.text = result
     }

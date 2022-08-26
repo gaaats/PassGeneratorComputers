@@ -104,7 +104,7 @@
         android:fontFamily="@font/montserrat_black"
         android:text="@string/generate"
         android:textAllCaps="true"
-        android:textColor="@color/white"
+        android:textColor="@color/add_colour_3_text_btn"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/guideline_hor_95"
         app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
