@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackfive.passgeneratorcomputers
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.passpackfour.passgeneratorplants.databinding.ActivitySplashScreenBinding
+import com.passpackfive.passgeneratorcomputers.databinding.ActivitySplashScreenBinding
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

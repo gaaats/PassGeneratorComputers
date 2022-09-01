@@ -1,10 +1,9 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackfive.passgeneratorcomputers
 
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
-import com.passpackfour.passgeneratorplants.databinding.FragmentResultBinding
+import com.passpackfive.passgeneratorcomputers.databinding.FragmentResultBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -100,51 +99,45 @@ class ResultFragment : Fragment() {
 
     private suspend fun generatePass() {
         val listPlants = listOf(
-            "a rose",
-            "a tulip",
-            "a carnation",
-            "a dandelion",
-            "a geranium",
-            "a rosebay",
-            "a lily",
-            "a crocus",
-            "an iris",
-            "a chrysanthemum",
-            "a freesia",
-            "a violet",
-            "a petunia",
-            "a sunflower",
-            "a cornflower",
-            "pansy",
-            "forget-me-nots",
-            "marigold",
-            "a daffodil",
-            "a daisy",
-            "an orchid",
-            "a poppy",
-            "a gladiolus",
-            "a dahlia",
-            "a peony",
-            "an aster",
-            "a gerbera",
-            "a fuchsia",
-            "bellflowers",
-            "a buttercup",
-            "lavender",
-            "a primula",
-            "a primrose",
-            "camellia",
-            "gardenia",
-            "a clover",
-            "lilac",
-            "snowdrops",
-            "lily-of-the-valley",
-            "a hyacinth",
-            "heather",
-            "a delphinium"
+            "disk cache",
+            "totalisator",
+            "data converter",
+            "computer peripheral",
+            "home computer",
+            "information processing system",
+            "storage",
+            "C.P.U.",
+            "web site",
+            "site",
+            "central processor",
+            "monitor",
+            "floppy",
+            "CPU",
+            "internet site",
+            "bus",
+            "client",
+            "keyboard",
+            "guest",
+            "computer accessory",
+            "computer storage",
+            "analog computer",
+            "number cruncher",
+            "computer circuit",
+            "computing machine",
+            "electronic computer",
+            "busbar",
+            "Turing machine",
+            "computer hardware",
+            "totalizer",
+            "microprocessor chip",
+            "silicon chip",
+            "data processor",
+            "host",
+            "totalizator",
+            "diskette"
         )
 
-        for (element in listPlants){
+        for (element in listPlants) {
             if (textPass.length <= 100) {
                 textPass = textPass + generateRandomNumber() + element
             }
