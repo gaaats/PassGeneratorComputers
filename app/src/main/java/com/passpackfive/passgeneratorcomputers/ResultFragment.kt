@@ -138,7 +138,7 @@ class ResultFragment : Fragment() {
         )
 
         for (element in listPlants) {
-            if (textPass.length <= 100) {
+            if (textPass.length <= 64) {
                 textPass = textPass + generateRandomNumber() + element
             }
         }
